@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="hero-title">Code. Create. Connect.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Neha Khanam Pathan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Neha Khanam Pathan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h2 class="title">Neha Khanam Pathan     Software Engineer</h2>
+        <h3 class="fade-in"></h3>
+        &nbsp;
+        &nbsp;
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/nehakhanam" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/NehaKhan9753" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+        
+      </div>
+      <br>
+   
+
+    </section>
+    <!-- CLIENT BANNER SECTION -->
+<section class="client-banner-section">
+  <div class="client-banner">
+    <div class="client-text">
+      <h2>Global Clients I’ve Worked With</h2>
+      <p>I’ve collaborated with industry leaders to develop scalable, efficient, and user-centric software solutions.</p>
+    </div>
+    <br>
+    <div class="client-logos">
+      <div class="client-item">
+        <a href="https://www.bmo.com" target="_blank">
+          <img src="./assets/bmologo.png" alt="BMO Logo" class="client-logo" />
+        </a>
+        <p>BMO – Financial Products and Services</p>
+      </div>
+     
+      <div class="client-item">
+        <a href="https://juta.co.za/" target="_blank">
+          <img src="./assets/jutalogo.png" alt="Juta Logo" class="client-logo" />
+        </a>
+        <p>Provider of Legal Technology Platforms</p>
+      </div>
+      <div class="client-item">
+        <a href="https://www.ideastoimpacts.com/" target="_blank">
+          <img src="./assets/i2ilogo.png" alt="Ideas to Impact Logo" class="client-logo" />
+        </a>
+        <p>Global Technology Solutions Provider</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END OF CLIENT BANNER SECTION -->
+&nbsp;
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Engineer</p>
+              <a href="https://www.tcs.com" target="_blank">
+                <img src="./assets/tcslogo.png" alt="Tata Consultancy Services Logo" class="edu-logo" />
+              </a>
+              
+              <a href="https://www.aiqod.com" target="_blank">
+                <img src="./assets/AIQoDlogo.jpeg" alt="AIQoD Logo" class="edu-logo" />
+              </a>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <a href="https://www.csu.edu/" target="_blank">
+                <img src="./assets/csulogo.png" alt="Chicago State University Logo" class="edu-logo" />
+              </a>
+              <p>Master of Science in Computer Science<br />Chicago State University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I’m Neha Khanam Pathan — a passionate software developer with a strong focus on building smart, user-friendly applications. I enjoy solving real-world problems using technology and have hands-on experience with cloud platforms, automation, and full-stack development. My work blends creativity with clean code, always aiming for efficient, scalable solutions. Whether it's improving legacy systems or creating something from scratch, I love the challenge. Let’s build something impactful together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skillset</h1>
+      <div class="skillset-container">
+        <div class="skillset-items">
+          <!-- Technical Skills -->
+          <div class="skill-item">
+            <img src="./assets/java.png" alt="Java" class="skill-icon" />
+            <p>Java</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/c++.png" alt="C++" class="skill-icon" />
+            <p>C++</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/python.png" alt="Python" class="skill-icon" />
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/Csharp.png" alt="C#" class="skill-icon" />
+            <p>C#</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/javascript.png" alt="JavaScript" class="skill-icon" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/ts.png" alt="TypeScript" class="skill-icon" />
+            <p>TypeScript</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/htmlandcss.jpeg" alt="HTML & CSS" class="skill-icon" />
+            <p>HTML & CSS</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/angular.png" alt="HTML & CSS" class="skill-icon" />
+            <p>Angular.js</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/react.png" alt="react" class="skill-icon" />
+            <p>React</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/nextjs.png" alt="Next.js" class="skill-icon" />
+            <p>Next.js</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/node.png" alt="Node.js" class="skill-icon" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/restapi.png" alt="REST APIs" class="skill-icon" />
+            <p>REST APIs</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/web3.png" alt="Web3" class="skill-icon" />
+            <p>Web3</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/micro.png" alt="Microservices" class="skill-icon" />
+            <p>Microservices</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/aws.jpeg" alt="Amazon Web Services" class="skill-icon" />
+            <p>Amazon Web Services</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/azure.jpeg" alt="Microservices" class="skill-icon" />
+            <p>Azure</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/gcp.png" alt="GCP" class="skill-icon" />
+            <p>GCP</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/docker.png" alt="Docker" class="skill-icon" />
+            <p>Docker</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/kuber.png" alt="Kubernetes" class="skill-icon" />
+            <p>Kubernetes</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/cicd.png" alt="ci" class="skill-icon" />
+            <p>CI/CD</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/jenkins.png" alt="Jenkins" class="skill-icon" />
+            <p>Jenkins</p>
+          </div>
+          <!-- Tools -->
+          <div class="skill-item">
+            <img src="./assets/git.png" alt="Git" class="skill-icon" />
+            <p>Git</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/github.png" alt="GitHub" class="skill-icon" />
+            <p>GitHub</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/sql.jpeg" alt="SQL" class="skill-icon" />
+            <p>SQL</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/mysql.png" alt="SQL" class="skill-icon" />
+            <p>MySQL</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/postgre.jpeg" alt="SQL" class="skill-icon" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/mongo.jpeg" alt="SQL" class="skill-icon" />
+            <p>MongoDB</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/nosql.png" alt="SQL" class="skill-icon" />
+            <p>NoSQL</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/postman.png" alt="Postman" class="skill-icon" />
+            <p>Postman</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/vscode.jpeg" alt="VSCode" class="skill-icon" />
+            <p>VSCode</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/intellij.jpeg" alt="IntelliJ" class="skill-icon" />
+            <p>IntelliJ</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/firebase.png" alt="react" class="skill-icon" />
+            <p>Firebase</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/openai.jpeg" alt="react" class="skill-icon" />
+            <p>OpenAI</p>
+          </div>
+          
+          <div class="skill-item">
+            <img src="./assets/ml.png" alt="machine learning" class="skill-icon" />
+            <p>Machine Learning</p>
+          </div>
+          <div class="skill-item">
+            <img src="./assets/iot.png" alt="iot" class="skill-icon" />
+            <p>iot</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid">
+          <div class="details-container ">
+              <div class="article-container">
+                  <img src="./assets/agent2.webp" alt="AI Agent" class="project-img" />
+              </div>
+              <h2 class="project-title">AI-Driven Event Scheduling Agent</h2>
+              <div class="details-content">
+                  <p class="project-description">AI-powered scheduling assistant that I developed, designed to revolutionize event management. Leveraging OpenAI API for Natural Language Processing (NLP), the system intelligently processes event details from both text and voice messages, offering unparalleled flexibility. It seamlessly integrates with Telegram Bot API for user interaction and Google Calendar API for automated event creation. This innovative solution, built using n8n for workflow automation, ensures efficient and seamless event scheduling, enhancing productivity and user experience.</p>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/AIagent.ppt', '_blank')">Read Document</button>
+
+              </div>
+          </div>
+          
+          <div class="details-container">
+              <div class="article-container">
+                  <img src="./assets/ecommerce4.webp" alt="e-commerce website" class="project-img" />
+              </div>
+              <h2 class="project-title">Full-stack E-commerce web application</h2>
+              <div class="details-content">
+                  <p>I developed a complete e-commerce website from front to back, using React for a smooth and interactive user experience. On the backend, I built a strong API with Node.js and Express, storing data securely in MongoDB Atlas. This platform includes all the essentials for online shopping: secure logins, easy product Browse and filtering, a shopping cart, and payment processing. Plus, it has separate dashboards for both users and administrators to manage everything efficiently. It's a full-featured online store designed for a great shopping experience.</p>
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/NehaKhan9753/E-commerce-web', '_blank')">GitHub</button>
+          
+              </div>
+          </div>
+          <div class="details-container">
+              <div class="article-container">
+                  <img src="./assets/stocks2.jpg" alt="Predicting S&P 500 Index Prices" class="project-img" />
+              </div>
+              <h2 class="project-title">Predicting S&P 500 Index Prices Using Machine Learning</h2>
+              <div class="details-content">
+                  <p>I built a machine learning model in Python designed to predict the future prices of the S&P 500 stock index. To make sure it was reliable, I rigorously tested it against past data (backtesting) and carefully analyzed the results to confirm its accuracy and effectiveness. This project demonstrates my ability to apply machine learning to real-world financial data for predictive analysis.</p>
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/NehaKhan9753/stockPriceSP500', '_blank')">GitHub</button>
+              </div>
+          </div>
+          <div class="details-container">
+              <div class="article-container">
+                  <img src="./assets/la3.png" alt="Learning Assistance" class="project-img" />
+              </div>
+              <h2 class="project-title">Computer Science and Mathematics Learning Assistance</h2>
+              <div class="details-content">
+                  <p>As a learning assistant under Professor Elaine Khaswneh at Chicago State University, I helped streamline operations and boost student learning. I automated our center's calendar updates by syncing internal schedules with Google Sheets, making information more visible and cutting down on manual work. I also worked directly with students, clarifying tough computer science and math concepts through peer sessions and hands-on problem-solving to improve their understanding.</p>
+              </div>
+          </div>
+  </div>
+  <img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#contact'"
+  />
+  </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="center-image">
+        <img src="./assets/se.gif" alt="Me as a Software Engineer" width="320" height="320" />
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:neha9753khan@gmail.com">neha9753khan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/nehakhanam" target="_blank" rel="noopener noreferrer">
+              &nbsp; LinkedIn
+            </a>
+          </p>  
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Neha Khanam Pathan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
