@@ -26,3 +26,13 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🧰 Project Structure
 
+Neha_portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│ ├── images/
+│ └── icons/
+├── README.md
+└── .gitignore
+
